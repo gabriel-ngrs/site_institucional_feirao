@@ -182,13 +182,17 @@ ul li:hover::before{
     font-style: normal;
     position: relative;
     top: -285px;
-    font-size: 1.5rem; /* Aumenta o tamanho da fonte (ajuste o valor conforme necessário) */
+    font-size: 1.8rem; /* Aumenta o tamanho da fonte (ajuste o valor conforme necessário) */
     color: #ffffff; /* Altere a cor para qualquer valor hexadecimal, RGB ou nome de cor */
     text-align: center;
 }
 /*Fim da primeira parte do site*/
 
 /*Inicio da segunda parte do site*/
+#texto-preprodutos {
+    background-color: #ffffff;
+}
+
 #texto-preprodutos h1{
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -198,103 +202,3 @@ ul li:hover::before{
     text-align: center;
 }
 
-/*Carrossel de fotos*/
-.slider{
-    margin: 0 auto;
-    width: 800px;
-    height: 800px;
-    overflow: hidden;
-}
-
-.slides{
-    width: 400%;
-    height: 400px;
-    display: flex;
-}
-
-.slides input {
-    display: none;
-}
-
-.slide {
-    width: 25%;
-    position: relative;
-}
-
-.slide img {
-    width: 800px;
-}
-
-.manual-navigation {
-    position: absolute;
-    width: 800px;
-    margin-top: 125px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn{
-    border: 2px solid #ffffff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child) {
-    margin-right: 40px;
-}
-
-.manual-btn:hover{
-    background-color: #fff;
-}
-
-#radio1:checked ~ .first{
-    margin-left:0;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .first{
-    margin-left: -50%;
-}
-
-#radio4:checked ~ .first{
-    margin-left: -75%;
-}
-
-.navigation-auto div{
-    border: 2px solid rgba(27, 187, 67, 0.644);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation-auto{
-    position: absolute;
-    width: 800px;
-    margin-top: 525px;
-    display: flex;
-    justify-content: center;
-}
-
-.navigation-auto div:not(:last-child) {
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #ffffff;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #ffffff;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #ffffff;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: #ffffff;
-}
-/*Fim do Carrossel de fotos*/
